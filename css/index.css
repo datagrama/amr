@@ -1,0 +1,326 @@
+/* 
+    Created on : 22/02/2021, 15:04:35
+    Author     : Carlos Rasteiro
+*/
+
+html{}
+
+body{}
+
+@font-face{
+    font-family: Cairo;
+    src: url('../fonts/Cairo-Regular.ttf');
+}
+@font-face{
+    font-family: Meriendab;
+    src: url('../fonts/Merienda-Bold.ttf');
+}
+@font-face{
+    font-family: Meriendar;
+    src: url('../fonts/Merienda-Regular.ttf');
+}
+@font-face{
+    font-family: PermanentMarker;
+    src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+@font-face{
+    font-family: Rancho;
+    src: url('../fonts/Rancho-Regular.ttf');
+}
+@font-face{
+    font-family: RockSalt;
+    src: url('../fonts/RockSalt-Regular.ttf');
+}
+@font-face{
+    font-family: SpecialElite;
+    src: url('../fonts/SpecialElite-Regular.ttf');
+}
+@font-face{
+    font-family: Swankyand;
+    src: url('../fonts/SwankyandMooMoo-Regular.ttf');
+}
+@font-face{
+    font-family: ReggaeOne;
+    src: url('../fonts/ReggaeOne-Regular.ttf');
+}
+@font-face{
+    font-family: TradeWinds;
+    src: url('../fonts/TradeWinds-Regular.ttf');
+}
+
+p{
+    font-family: Cairo;
+    font-size: 20px;
+}
+
+h1{
+    font-family: Rancho;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+.header{
+    background-image: url("../images/soldador.jpg");
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 45px 15px;
+}
+.header-logo{
+    align-self: flex-end;
+    text-align: center;
+    color: white;
+    width: 23%;
+}
+.header-logo h1{
+    font-family: ReggaeOne;
+    font-size: 3em;
+    margin: 0;
+}
+.header-logo p{
+    font-family: RockSalt;
+    font-size: 120%;
+    margin: 0;
+}
+.header-menu{
+    /*background-color: #555;*/
+    align-self: flex-end;
+    width: 60%;
+}
+.navbar{
+    width: 100%;
+    margin-right: 0;
+    /*background-color: #555;*/
+    overflow: auto;
+}
+.navbar a {
+    font-family: SpecialElite;
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    background-color: #000;
+}
+
+
+
+.content{
+    background-image: url("../images/escada3.jpg");
+    padding: 1px 0 30px 0;
+    text-align: center;
+}
+
+
+
+.intro{
+    background-color: black;
+    opacity: 0.7;
+    
+}
+.intro p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.about{background-color: black;}
+
+
+
+.services{background-color: black;}
+.services-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services-outer{
+    margin: 20px 0;
+    width: 40%;
+    height: 300px;
+    position: relative;
+    border: azure thin solid; /* para apagar*/
+}
+.services-outer img{max-width: 100%}
+.services-inner{
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+.services-inner p{margin: 10px 0;}
+
+
+
+.contacts{background-color: black;}
+.contacts-group{display: flex}
+.contacts-title{
+    font-family: Rancho;
+    font-size: 30px;
+}
+.contacts-text{
+    width: 50%;
+    padding: 0 25px;
+    text-align: left;
+}
+.contacts-map{border-radius: 20px;}
+.contacts-form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Form section ------------------------------------------------------------- */
+
+* {box-sizing: border-box;}
+
+.form-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-body-left {
+    width: 40%;
+}
+.form-body-right {
+    width: 40%;
+}
+
+input[type=text], [type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    resize: vertical;/*para que serve?*/
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+   background-color: #45a049;
+}
+
+textArea {
+    height: 150px;
+}
+
+label {font-family: Cairo;}
+
+/* End of Form Section------------------------------------------------------- */
+
+
+.footer{
+    background-color: black;
+    padding-top: 20px;
+}
+.footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-info{}
+.footer-info h1{
+    font-family: ReggaeOne;
+    font-size: 18px;
+    margin: 0;
+}
+.footer-info p{
+    font-family: RockSalt;
+    font-size: 15px;
+    margin: 0;
+}
+.footer-info-text{padding: 10px 0 0 0;}
+.footer-info-text p{
+    font-family: Cairo;
+    margin-top: 10px;
+}
+.footer-highlights{
+    
+}
+.footer-social{}
+.footer-cfg{
+    width: 30%;
+
+    color: white;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.datagrama{
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+.datagrama a{
+    color: white;
+    text-decoration: none;
+}
+.datagrama a:hover{color: blue;}
+
+
+
+.parallax{
+    /* The image used 
+    background-image: url("img_parallax.jpg");*/
+    /* Set a specific height */
+    min-height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divcfg{
+    
+    padding: 15px 30px;
+    text-align: justify;
+    color: white;
+    border: azure thick solid;
+    border-radius: 30px;
+    margin: 70px;
+}
+
+.goback{
+    text-align: right;
+    padding: 10px 0;
+}
+.goback a{
+    color: lightblue;
+    text-decoration: none;
+    font-family: SpecialElite;
+    font-size: 20px;
+}
+.goback a:hover{color: lightgreen;}
+
+#map {
+  width: 80%;
+}
